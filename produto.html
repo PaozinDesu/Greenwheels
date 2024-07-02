@@ -5,15 +5,27 @@
     <meta charset="UTF-8">
     <title>Produtos</title>
     <style>
-        .menu, .car-details {
+        .menu,
+        .car-details {
             display: none;
         }
-        .menu.active, .car-details.active {
+
+        .menu.active,
+        .car-details.active {
             display: block;
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <img src="" alt="">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+    </header>
     <div id="menu" class="menu active">
         <h1>Produtos</h1>
         <h2>Menu de Carros</h2>
@@ -55,7 +67,8 @@
 
     <div id="model3" class="car-details">
         <h2>Tesla Model 3</h2>
-        <p>Um dos carros elétricos mais populares, conhecido por sua combinação de desempenho, alcance e preço acessível.</p>
+        <p>Um dos carros elétricos mais populares, conhecido por sua combinação de desempenho, alcance e preço
+            acessível.</p>
         <img src="model3_1.jpg" alt="Tesla Model 3" width="300">
         <img src="model3_2.jpg" alt="Tesla Model 3" width="300">
         <a href="#menu" class="back-to-menu">Voltar ao Menu</a>
@@ -116,15 +129,15 @@
         <img src="kona_2.jpg" alt="Hyundai Kona Electric" width="300">
         <a href="#menu" class="back-to-menu">Voltar ao Menu</a>
     </div>
-    
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const carLinks = document.querySelectorAll('.car-link');
             const carDetails = document.querySelectorAll('.car-details');
             const backToMenuLinks = document.querySelectorAll('.back-to-menu');
 
             carLinks.forEach(link => {
-                link.addEventListener('click', function(event) {
+                link.addEventListener('click', function (event) {
                     event.preventDefault();
                     const carId = link.getAttribute('data-car');
                     document.getElementById('menu').classList.remove('active');
@@ -133,7 +146,7 @@
             });
 
             backToMenuLinks.forEach(link => {
-                link.addEventListener('click', function(event) {
+                link.addEventListener('click', function (event) {
                     event.preventDefault();
                     carDetails.forEach(detail => detail.classList.remove('active'));
                     document.getElementById('menu').classList.add('active');
@@ -142,24 +155,24 @@
         });
     </script>
 </body>
-    <footer>
-        <div>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="produto.html">Produtos</a></li>
-                <li><a href="calculadora.html">Calculadora</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>img src="facebook_thumb.jpg" alt="Facebook" width="50"</li>
-                <li>img src="instagram_thumb.jpg" alt="Instagram" width="50"</li>
-                <li>img src="tiktok_thumb.jpg" alt="Tik Tok" width="50"</li>
-            </ul>
-            <h6>copyright direitos reservados©</h6>
-        </div>
-    </footer>
+<footer>
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produto.html">Produtos</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>img src="facebook_thumb.jpg" alt="Facebook" width="50"</li>
+            <li>img src="instagram_thumb.jpg" alt="Instagram" width="50"</li>
+            <li>img src="tiktok_thumb.jpg" alt="Tik Tok" width="50"</li>
+        </ul>
+        <h6>copyright direitos reservados©</h6>
+    </div>
+</footer>
 </body>
 
 </html>
