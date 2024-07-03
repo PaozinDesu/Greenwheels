@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #66cc99;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    color: #333;
+}
+
+/* #conteudo {
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+#calculadora, #comparacao {
+    margin-bottom: 20px;
+}
+
+#calculadora input, #comparacao input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+#calculadora button, #comparacao button {
+    width: 100%;
+    padding: 10px;
+    background: #e63900;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#calculadora button:hover, #comparacao button:hover {
+    background: #66cc99;
+}
+
+#result, #comparisonResult {
+    padding: 10px;
+    background: #eaeaea;
+    margin-top: 10px;
+}
+
+#banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #66cc99;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+#rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+#rodape ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#rodape ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#rodape img {
+    width: 50px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
