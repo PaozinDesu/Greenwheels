@@ -1,4 +1,101 @@
-<!-- calculadora -->
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<!-- tentando enviar para um repositorio remoto  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- <link rel="stylesheet" href="calculadora.css"> -->
+</head>
 
+<body>
+    <header>
+        <img src="" alt="logo GW">
+        <h1>Green Wheels</h1>
+        <nav>
+            <ul>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Compare os custos e os benefícios entre um <strong>carro comum</strong> e um <strong>carro elétrico</strong></h2>
+
+    
+    <div id="banner">
+        <img src="" alt="banner GW">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, blanditiis!</h4>
+    </div>
+
+
+        <h2>Comparação de Carros</h2>
+
+        <div id="comparacao">
+            <h3>Carro Comum</h3>
+            <label for="precoCombustivel">Preço do Combustível por Litro (R$):</label>
+            <input type="number" id="precoCombustivel" placeholder="Preço do Combustível">
+            <label for="kmPorLitro">Km por Litro:</label>
+            <input type="number" id="kmPorLitro" placeholder="Km por Litro">
+            <label for="kmPorMes">Km por Mês:</label>
+            <input type="number" id="kmPorMes" placeholder="Km por Mês">
+
+            <h3>Carro Elétrico</h3>
+            <label for="precoEletricidade">Preço da Eletricidade por kWh (R$):</label>
+            <input type="number" id="precoEletricidade" placeholder="Preço da Eletricidade">
+            <label for="kmPorKwh">Km por kWh:</label>
+            <input type="number" id="kmPorKwh" placeholder="Km por kWh">
+            <label for="kmPorMesEletrico">Km por Mês:</label>
+            <input type="number" id="kmPorMesEletrico" placeholder="Km por Mês">
+            <button onclick="compare()">Comparar</button>
+            <p id="comparisonResult"></p>
+        </div>
+    </div>
+
+  
+   
+
+    <footer>
+        <div id="rodape">
+            <ul>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+            <img src="" alt="logo-rodape GW">
+            &copy; Green Wheels
+        </div>
+    </footer>
+
+    <script>
+        function calculate() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            if (!isNaN(num1) && !isNaN(num2)) {
+                document.getElementById('result').innerText = 'Resultado: ' + (num1 + num2);
+            } else {
+                document.getElementById('result').innerText = 'Por favor, insira números válidos.';
+            }
+        }
+
+        function compare() {
+            const precoCombustivel = parseFloat(document.getElementById('precoCombustivel').value);
+            const kmPorLitro = parseFloat(document.getElementById('kmPorLitro').value);
+            const kmPorMes = parseFloat(document.getElementById('kmPorMes').value);
+
+            const precoEletricidade = parseFloat(document.getElementById('precoEletricidade').value);
+            const kmPorKwh = parseFloat(document.getElementById('kmPorKwh').value);
+            const kmPorMesEletrico = parseFloat(document.getElementById('kmPorMesEletrico').value);
+
+            if (!isNaN(precoCombustivel) && !isNaN(kmPorLitro) && !isNaN(kmPorMes) && !isNaN(precoEletricidade) && !isNaN(kmPorKwh) && !isNaN(kmPorMesEletrico)) {
+                const custoCombustivel = (kmPorMes / kmPorLitro) * precoCombustivel;
+                const custoEletricidade = (kmPorMesEletrico / kmPorKwh) * precoEletricidade;
+
+                document.getElementById('comparisonResult').innerText = `Custo Mensal do Carro Comum: R$ ${custoCombustivel.toFixed(2)}\nCusto Mensal do Carro Elétrico: R$ ${custoEletricidade.toFixed(2)}`;
+            } else {
+                document.getElementById('comparisonResult').innerText = 'Por favor, insira valores válidos para todos os campos.';
+            }
+        }
+    </script>
+</body>
+
+</html>
