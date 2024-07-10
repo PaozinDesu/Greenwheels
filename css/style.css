@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --main-color: #1e2f23;
+    --second-color: #34623f;
+    --third-color: #b39c4d;
+    --second-color-hover: #34793F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: #F0EAD6;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    background-color: var(--second-color);
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    background-color: var(--second-color-hover);
+}
+
+#banner {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    margin-top: 70px;
+    height: 500px;
+    border-bottom: 5px solid var(--main-color);
+}
+
+#banner img {
+    width: 100%;
+}
+
+#banner h4 {
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 65px;
+    color: white;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: black;
+}
+
+
+
+main {
+    margin: 50px 5%;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+footer {
+    background-color: var(--second-color);
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+footer div {
+    margin: 0 auto;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul li {
+    list-style: none;
+
+}
+
+footer ul li a img {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+footer h6 {
+    font-weight: 300;
+}

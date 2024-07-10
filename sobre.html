@@ -4,73 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe to HTML</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F0EAD6; /* Fundo bege claro */
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #4A7C59; /* Verde escuro */
-            color: white;
-        }
-        .container {
-            padding: 20px;
-        }
-        h2 {
-            color: #4A7C59; /* Verde escuro */
-        }
-        .section {
-            background-color: #D5C8A0; /* Marrom claro */
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-        .section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .section-text {
-            color: #3B3025; /* Marrom escuro */
-        }
-        .section-content {
-            display: flex;
-            gap: 20px;
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form input, .contact-form textarea {
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #4A7C59; /* Verde escuro */
-            border-radius: 5px;
-        }
-        .contact-form button {
-            padding: 10px;
-            background-color: #4A7C59; /* Verde escuro */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #4A7C59; /* Verde escuro */
-            color: white;
-        }
-    </style>
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobre.css">
 </head>
 
 <body>
@@ -82,63 +18,49 @@
             <li><a href="index.html">Home</a></li>
         </ul>
     </header>
-    <div id="banner">
-        <img src="" alt="" width="100%" height="200px">
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, blanditiis!</h4>
-    </div>
-
-    <!-- Objetivos Section -->
-    <section>
+    <main>
         <h2>Objetivos</h2>
-        <img src="src/img/carro eletrico.jfif" alt="" width="400px" height="200px">
-        <p>Nossos objetivos incluem promover o uso de carros elétricos para reduzir a poluição e melhorar a sustentabilidade ambiental
-        </p>
-    </section>
+        <div>
+            <img src="src/img/carro_eletrico.png" alt="" width="400px" height="200px">
+            <p>Nossos objetivos incluem promover o uso de carros elétricos para reduzir a poluição e melhorar a
+                sustentabilidade ambiental
+            </p>
+        </div>
 
-    <section>
         <h2>Vantagens</h2>
-        <p>Os carros elétricos oferecem diversas vantagens, como menor emissão de gases poluentes, redução de ruído, e menor custo de manutenção em comparação com veículos movidos a combustíveis fósseis.
-        </p>
-    </section>
+        <div>
+            <p>Os carros elétricos oferecem diversas vantagens, como menor emissão de gases poluentes, redução de ruído,
+                e
+                menor custo de manutenção em comparação com veículos movidos a combustíveis fósseis.
+            </p>
+        </div>
 
-    <section>
         <h2>Origem</h2>
-        <p>A criação de carros sustentáveis é uma resposta à crescente demanda por soluções que minimizem o impacto ambiental. Esses veículos são projetados para serem mais eficientes energeticamente e para utilizar materiais recicláveis e sustentáveis em sua fabricação.</p>
-    </section>
+        <div>
+            <p>A criação de carros sustentáveis é uma resposta à crescente demanda por soluções que minimizem o impacto
+                ambiental. Esses veículos são projetados para serem mais eficientes energeticamente e para utilizar
+                materiais recicláveis e sustentáveis em sua fabricação.</p>
+        </div>
 
-    <div>
         <h2>Contato</h2>
         <form action="">
             <label for="nome">Nome</label>
-            <br>
-            <input type="text" name="nome">
-            <br><br>
-            <label for="email">email</label>
-            <br>
-            <input type="email" name="email">
-            <br><br>
+            <input type="text" name="nome" id="nome" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
             <label for="menssagem">Menssagem</label>
-            <br>
-            <textarea name="menssagem" id=""></textarea>
-            <input type="submit" value="Enviar">
+            <textarea name="menssagem" id="menssagem" required></textarea>
+            <button type="submit" id="btnEnviar">Enviar</button>
         </form>
-    </div>
-
+    </main>
     <footer>
         <div>
             <ul>
-                <li><a href="produto.html">Produtos</a></li>
-                <li><a href="calculadora.html">Calculadora</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
                 <li><a href=""><img src="" alt="" width="25px" height="25px"></a></li>
                 <li><a href=""><img src="" alt="" width="25px" height="25px"></a></li>
                 <li><a href=""><img src="" alt="" width="25px" height="25px"></a></li>
             </ul>
-            <h6>copyright direitos reservados©</h6>
+            <h6>copyright direitos reservados &copy;</h6>
         </div>
     </footer>
 </body>
