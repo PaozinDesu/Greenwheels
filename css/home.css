@@ -1,0 +1,67 @@
+:root {
+    --main-color: #1e2f23;
+    --second-color: #34623f;
+    --third-color: #b39c4d;
+    --second-color-hover: #34793F;
+}
+
+main {
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 100px;
+    border-bottom: 2px solid var(--second-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+}
+
+section .secao {
+    display: flex;
+}
+
+section .secao img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+section .secao p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 30px;
+}
+
+section #secao3 {
+    flex-direction: column;
+}
+
+section #secao4 {
+    justify-content: space-around;
+}
+
+section #secao4 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 15vw;
+    height: 25vh;
+    position: relative;
+}
+
+section #secao4 div h6 {
+    font-size: 22px;
+    font-weight: 500;
+    position: absolute;
+    bottom: -35px;
+}

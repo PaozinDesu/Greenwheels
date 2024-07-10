@@ -1,0 +1,71 @@
+:root {
+    --main-color: #1e2f23;
+    --second-color: #34623f;
+    --third-color: #b39c4d;
+    --second-color-hover: #34793F;
+}
+
+main {
+    text-align: center;
+    gap: 30px;
+}
+
+main h2 {
+    margin-bottom: 30px;
+}
+
+main div {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    background-color: #d8d2bf;
+    padding: 50px 10%;
+    border-radius: 40px;
+}
+
+main div p {
+    font-size: 25px;
+}
+
+form {
+    background-color: #d8d2bf;
+    border-radius: 40px;
+    padding: 30px 10%;
+}
+
+form input {
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 8px 10px;
+    outline: none;
+    border: 2px solid var(--second-color);
+    margin-bottom: 20px;
+}
+
+form textarea {
+    resize: none;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid var(--second-color);
+}
+
+form button {
+    padding: 13px 80px;
+    border-radius: 20px;
+    background-color: #1e2f23;
+    color: white;
+    border: 2px solid var(--second-color);
+    margin-top: 40px;
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+form button:hover {
+    background-color: var(--second-color-hover);
+}

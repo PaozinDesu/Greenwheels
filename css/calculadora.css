@@ -6,22 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background: #66cc99;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header img {
-    width: 50px;
-    vertical-align: middle;
-}
-
-header h1 {
-    display: inline;
-    margin-left: 10px;
-}
 
 nav ul {
     list-style: none;
@@ -50,18 +34,23 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 } */
 
-#calculadora, #comparacao {
+#calculadora,
+#comparacao {
     margin-bottom: 20px;
+    width: 100%;
+    padding: 50px 10%;
 }
 
-#calculadora input, #comparacao input {
+#calculadora input,
+#comparacao input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     box-sizing: border-box;
 }
 
-#calculadora button, #comparacao button {
+#calculadora button,
+#comparacao button {
     width: 100%;
     padding: 10px;
     background: #e63900;
@@ -70,11 +59,13 @@ h2 {
     cursor: pointer;
 }
 
-#calculadora button:hover, #comparacao button:hover {
+#calculadora button:hover,
+#comparacao button:hover {
     background: #66cc99;
 }
 
-#result, #comparisonResult {
+#result,
+#comparisonResult {
     padding: 10px;
     background: #eaeaea;
     margin-top: 10px;
