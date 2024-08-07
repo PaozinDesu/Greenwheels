@@ -1,43 +1,64 @@
 :root {
-    --main-color: #1e2f23;
-    --second-color: #34623f;
-    --third-color: #b39c4d;
-    --second-color-hover: #34793F;
+    --main-color: black;
+    --second-color: #f5f5f5;
+    --second-color-hover: #68de7c;
 }
 
-main {
-    text-align: center;
-}
-
-main h1 {
-    margin-bottom: 100px;
-    border-bottom: 2px solid var(--second-color);
-}
 
 section {
     display: flex;
     flex-direction: column;
-    gap: 100px;
     text-align: center;
 }
 
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    text-align: center;   
+    gap: 10px;
+    padding: 20px;
+}
+.titulo p{
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+section h2{
+background-color: #f2f2f2;
+font-size: 40px;
+font-weight: 600;
+}
+
+section .secao h4 {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 500px;
+    min-width: 370px;
+    text-align: start;
+    line-height: 20px;
+}
+
 section .secao {
+    align-items: center;
     display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0 5%;
 }
 
-section .secao img {
+section .secao div {
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border-radius: 20px;
+    width: 100%;
+    padding: 30px;   
 }
-
-section .secao p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    font-size: 30px;
+section .secao div img{
+    width: 100%;
 }
 
 section #secao3 {
@@ -46,6 +67,8 @@ section #secao3 {
 
 section #secao4 {
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 section #secao4 div {
@@ -53,9 +76,10 @@ section #secao4 div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    width: 15vw;
-    height: 25vh;
+    height: 250px;
+    width: 350px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
     position: relative;
 }
 
@@ -64,4 +88,26 @@ section #secao4 div h6 {
     font-weight: 500;
     position: absolute;
     bottom: -35px;
+}
+
+@media only screen and (max-width: 850px){
+
+    section .secao{
+        flex-direction: column;
+    }
+    section #secao2{
+        flex-direction: column-reverse;
+    }
+    #banner h4 {
+        font-size: 15px;
+        -webkit-text-stroke-width: 0px;
+        bottom: 15px;
+        right: 10px;
+        background-color: black;
+        padding: 7px 14px;
+    }
+
+    header img {
+        display: none;
+    }
 }
