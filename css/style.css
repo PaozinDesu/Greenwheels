@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
-    --main-color: #1e2f23;
-    --second-color: #34623f;
-    --third-color: #b39c4d;
-    --second-color-hover: #34793F;
+    --main-color: black;
+    --second-color: white;
+    --second-color-hover: #68de7c;
 }
 
 * {
@@ -16,7 +15,7 @@
 
 body {
     position: relative;
-    background-color: #F0EAD6;
+    background-color: #ffffff;
 }
 
 header {
@@ -28,7 +27,13 @@ header {
     position: fixed;
     top: 0;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
+    height: 70px;
+}
+
+header img {
+    padding: 5px 0;
+    height: 50px;
 }
 
 header ul {
@@ -46,7 +51,7 @@ header ul li a {
     padding: 5px 15px;
     border-radius: 10px;
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 0.3s;
 }
 
@@ -54,21 +59,25 @@ header ul li a:hover {
     background-color: var(--second-color-hover);
 }
 
+
+
 #banner {
     width: 100%;
+    max-height: 600px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-size: cover;
     margin-top: 70px;
-    height: 500px;
-    border-bottom: 5px solid var(--main-color);
+    background-color: red;
 }
 
 #banner img {
+    display: flex;
+    justify-items: end;
     width: 100%;
+    border-bottom: 5px solid var(--main-color);
 }
 
 #banner h4 {
@@ -80,20 +89,17 @@ header ul li a:hover {
     font-weight: 700;
     font-size: 65px;
     color: white;
-    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-width: 0.6px;
     -webkit-text-stroke-color: black;
 }
 
-
-
 main {
-    margin: 50px 5%;
+    margin: 50px 0;
     border-radius: 20px;
-    padding: 40px;
 }
 
 footer {
-    background-color: var(--second-color);
+    background-color: var(--main-color);
     width: 100%;
     color: white;
     justify-content: space-between;
