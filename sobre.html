@@ -38,23 +38,23 @@
 
         <h2>Origem</h2>
         <div>
-            <p>A criação de carros sustentáveis é uma resposta à crescente demanda por soluções que minimizem o impacto
+            <p>A criação de carros sustentáveis é uma resposta à crescente demandapor soluções que minimizem o impacto
                 ambiental. Esses veículos são projetados para serem mais eficientes energeticamente e para utilizar
                 materiais recicláveis e sustentáveis em sua fabricação.</p>
         </div>
 
         <h2>Contato</h2>
-        <form action="">
+        <form action="" onsubmit="return validar()">
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" >
+            <input type="text" name="nome" id="nome">
             <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
 
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" >
+            <input type="email" name="email" id="email">
             <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
 
             <label for="menssagem">Menssagem</label>
-            <textarea maxlength="700" placeholder="Máximo 700 caracteres" name="menssagem" id="menssagem" ></textarea>
+            <textarea maxlength="700" placeholder="Máximo 700 caracteres" name="menssagem" id="menssagem"></textarea>
             <p id="menssagem-helper" class="helper-text">Mensagem de ajuda</p>
 
             <button type="submit" id="btnEnviar">Enviar</button>
@@ -70,6 +70,12 @@
             <h6>copyright direitos reservados &copy;</h6>
         </div>
     </footer>
+    <div id="aviso">
+        <div id="container">
+            <h3 id="menssagemAviso"></h3>
+            <button id="btnAviso" OnClick="fechar()">Voltar</button>
+        </div>
+    </div>
 </body>
 
 </html>

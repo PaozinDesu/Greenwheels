@@ -4,7 +4,10 @@
     --second-color-hover: #68de7c;
 }
 
-
+body {
+    position: relative;
+    bottom: 0;
+}
 main {
     text-align: center;
     gap: 30px;
@@ -81,6 +84,13 @@ form button:hover {
     background-color: var(--second-color-hover);
 }
 
+label {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-self: baseline;
+}
+
 .required-popup::after{
     content: "*Campo obrigatório";
     position: absolute;
@@ -114,6 +124,46 @@ form button:hover {
 
   .visible {
     display: block;
+  }
+
+  #aviso{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(222, 222, 222, 0.4);
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-block: 0;
+  }
+
+  #container{
+    background-color: lightgrey;
+    border-radius: 40px;
+    width: 400px;
+    height: 270px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #menssagemAvis{
+    z-index: 3;
+    background-color: blue;
+  }
+
+  
+  #btnAviso{
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 28px;
   }
 
   @media only screen and (max-width: 850px){
