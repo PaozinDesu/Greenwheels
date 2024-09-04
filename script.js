@@ -50,6 +50,7 @@ let campos = ['nome', 'email', 'menssagem'];
     }
 
     function validar() {
+        let emailPattern2 = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
         let email = document.getElementById('email');
         let nome = document.getElementById('nome');
         let menssagem = document.getElementById('menssagem');
@@ -58,18 +59,20 @@ let campos = ['nome', 'email', 'menssagem'];
 
         if (nome.value.length < 5) {
             aviso.style.display = 'flex';
-            menssagemAviso.innerText = 'Preencha campo Nome corretamente!'
+            menssagemAviso.innerText = 'Preencha o campo nome corretamente!'
             document.body.style.position = "fixed";
             return false;
         }
-        else if (emailPattern.test(email)) {
+        else if (emailPattern2.test(email)) {
             aviso.style.display = 'flex';
             menssagemAviso.innerText = 'Preencha campo email corretamente!'
+            document.body.style.position = "fixed";
             return false;
         } 
         else if (menssagem.value.length < 10){
             aviso.style.display = 'flex';
             menssagemAviso.innerText = 'A mensagem tem que ter no menino 10 caracteres!'
+            document.body.style.position = "fixed";
             return false;
         }
         else{
