@@ -8,6 +8,30 @@
     display: block;
 }
 
+.car-details.active{
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.car-details.active img{
+    display: flex;
+    align-self: center;
+}
+
+.car-details.active p{
+margin-top: -40px;
+}
+
+.car-details.active a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 .menu h1 {
     text-align: center;
     margin: 120px 0 40px 0;
@@ -53,8 +77,9 @@ footer {
     bottom: 0;
 }
 
-.car-details {
-    margin-top: 100px;
+
+.car-details img{
+    height: 100%;
 }
 
 .car-details a {
